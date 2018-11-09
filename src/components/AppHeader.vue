@@ -15,12 +15,12 @@
     {{isLoggedIn}}
     <div class="right menu">
       <div v-if="isLoggedIn" class="horizontal">
-        <a href="#" class="ui item" @click="logout">
+        <router-link to="/" class="ui item" @click="logout">
           Gallery
-        </a>
-        <a href="#" class="ui item" @click="logout">
+        </router-link>
+        <router-link to="/upload" class="ui item" @click="logout">
           Upload
-        </a>
+        </router-link>
         <a href="#" class="ui item" @click="logout">
           Logout
         </a>
