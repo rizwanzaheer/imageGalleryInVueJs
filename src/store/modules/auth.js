@@ -6,7 +6,7 @@ const getters = {
 };
 const actions = {
   logout: ({ commit }) => {
-
+    commit('setToken', null);
   }
 };
 const mutations = {
