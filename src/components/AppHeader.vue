@@ -14,8 +14,16 @@
     </a>
     {{isLoggedIn}}
     <div class="right menu">
-      <div v-if="isLoggedIn">
-        Gallary
+      <div v-if="isLoggedIn" class="horizontal">
+        <a href="#" class="ui item" @click="login">
+          Gallery
+        </a>
+        <a href="#" class="ui item" @click="login">
+          Upload
+        </a>
+        <a href="#" class="ui item" @click="login">
+          Logout
+        </a>
       </div>
       <a v-else href="#" class="ui item" @click="login">
         Login
@@ -33,4 +41,12 @@ export default {
   methods: mapActions(["login"])
 };
 </script>
+ 
+ <style scoped>
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+</style>
+ 
  
