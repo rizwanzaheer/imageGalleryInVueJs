@@ -5,6 +5,8 @@
 </template>
 <script>
 export default {
-  name: "AuthHandler"
+  name: "AuthHandler",
+  beforeCreate() {},
+  created() {}
 };
 </script>
