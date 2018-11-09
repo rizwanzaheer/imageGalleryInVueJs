@@ -3,7 +3,6 @@
     <router-link to="/" class="item">
       Image Storage
     </router-link>
-    {{isLoggedIn}}
     <div class="right menu">
       <div v-if="isLoggedIn" class="horizontal">
         <router-link to="/" class="ui item" @click="logout">
