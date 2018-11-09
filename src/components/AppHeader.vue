@@ -15,13 +15,13 @@
     {{isLoggedIn}}
     <div class="right menu">
       <div v-if="isLoggedIn" class="horizontal">
-        <a href="#" class="ui item" @click="login">
+        <a href="#" class="ui item" @click="logout">
           Gallery
         </a>
-        <a href="#" class="ui item" @click="login">
+        <a href="#" class="ui item" @click="logout">
           Upload
         </a>
-        <a href="#" class="ui item" @click="login">
+        <a href="#" class="ui item" @click="logout">
           Logout
         </a>
       </div>
@@ -38,7 +38,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "AppHeader",
   computed: mapGetters(["isLoggedIn"]),
-  methods: mapActions(["login"])
+  methods: mapActions(["login", "logout"])
 };
 </script>
  
