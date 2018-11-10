@@ -1,6 +1,6 @@
 <template>
   <div class="ui secondary pointing menu">
-    <router-link to="/" class="item">
+    <router-link to="/" class="item active">
       Image Storage
     </router-link>
     <div class="right menu">
