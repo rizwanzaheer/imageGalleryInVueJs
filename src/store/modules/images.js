@@ -1,6 +1,4 @@
-import qs from 'qs';
 import api from '../../api/imgur';
-import { router } from '../../main';
 
 const state = {
   images: []
@@ -22,7 +20,9 @@ const actions = {
   //   window.localStorage.setItem('imgur_token', query.access_token);
   //   router.push('/');
   // }
-  fetchImages() { }
+  fetchImages() {
+    api.fetchImages();
+  }
 };
 const mutations = {
   setImages: (state, images) => {

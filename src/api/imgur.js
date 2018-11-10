@@ -12,7 +12,11 @@ export default {
     };
     window.location = `${ROOT_URL}/oauth2/authorize?${qs.stringify(querystring)}`;
   },
-  fetchImages() {
-    return axios.get(`${ROOT_URL}/3/account/me/images`);
+  fetchImages(token) {
+    return axios.get(`${ROOT_URL}/3/account/me/images`, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
   }
 };
