@@ -1,6 +1,11 @@
 <template>
   <div>
-    ImageList
+    <img 
+      :src="image.link"
+      :key="image.link"
+      v-for="image in allImages"
+      alt=""
+    />
   </div>
 </template>
 <script>

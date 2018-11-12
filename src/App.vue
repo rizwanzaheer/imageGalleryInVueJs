@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <AppHeader/>
-    <router-view></router-view>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="ui container">
+      <router-view></router-view>
+      <img alt="Vue logo" src="./assets/logo.png">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+    </div>
   </div>
 </template>
 
