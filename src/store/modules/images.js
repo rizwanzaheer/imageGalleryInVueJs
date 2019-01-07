@@ -4,9 +4,11 @@ import { router } from '../../main';
 const state = {
   images: []
 };
+
 const getters = {
   allImages: state => state.images
 };
+
 const actions = {
   // login: () => {
   //   api.login();
@@ -26,13 +28,14 @@ const actions = {
     const response = await api.fetchImages(token);
     commit('setImages', response.data.data);
   },
-  async uploadImages({ rootState, commit }, images) {
+  async uploadImages({ rootState }, images) {
     const { token } = rootState.auth;
 
     await api.upload(images, token);
     router.push('/');
   }
 };
+
 const mutations = {
   setImages: (state, images) => {
     state.images = images;

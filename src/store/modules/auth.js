@@ -5,9 +5,11 @@ import { router } from '../../main';
 const state = {
   token: window.localStorage.getItem('imgur_token')
 };
+
 const getters = {
   isLoggedIn: state => !!state.token
 };
+
 const actions = {
   login: () => {
     api.login();
@@ -23,6 +25,7 @@ const actions = {
     router.push('/');
   }
 };
+
 const mutations = {
   setToken: (state, token) => {
     state.token = token;

@@ -1,11 +1,6 @@
 <template>
   <div v-if="isLoggedIn" class="image-container">
-    <img 
-      :src="image.link"
-      :key="image.link"
-      v-for="image in allImages"
-      alt=""
-    />
+    <img :src="image.link" :key="image.link" v-for="image in allImages" alt>
   </div>
   <h2 v-else>Login to get started!</h2>
 </template>

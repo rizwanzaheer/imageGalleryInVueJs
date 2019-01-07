@@ -4,19 +4,19 @@
     <div class="ui container">
       <router-view></router-view>
       <img alt="Vue logo" src="./assets/logo.png">
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 import AppHeader from "./components/AppHeader.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
+    // HelloWorld,
     AppHeader
   }
 };
